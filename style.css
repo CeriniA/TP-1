@@ -1,6 +1,5 @@
-*{
+* {
   box-sizing: border-box;
-
 }
 :root {
   --header-height: 3 rem;
@@ -14,10 +13,14 @@ body {
 
 /* Componentes */
 .menu-btn {
-  background-color: #222;
+  background-color: transparent;
+  
   outline: thin;
   border: 0;
   cursor: pointer;
+}
+.menu-btn svg {
+  color: white;
 }
 .menu {
   display: none;
@@ -34,7 +37,7 @@ body {
   width: 100%;
   height: var(--header-height);
   padding: 1rem;
-  background-color: #000;
+  background-color: transparent;
 }
 .header-container {
   display: flex;
@@ -43,8 +46,6 @@ body {
   width: 100%;
   max-width: 1200px;
 }
-
-
 
 .hero-img {
   background-image: var(--hero-image);
@@ -74,7 +75,7 @@ body {
 }
 
 /* Utilidades */
- 
+
 .none {
   display: none;
 }
