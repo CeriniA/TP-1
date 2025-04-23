@@ -1,78 +1,16 @@
+@import url("header.css");
 * {
   box-sizing: border-box;
-}
-:root {
-  --header-height: 3 rem;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  
   font-family: "Poppins", sans-serif;
   background-color: #000;
 }
 
-/* Componentes */
-.menu-btn {
-  background-color: transparent;
-  
-  outline: thin;
-  border: 0;
-  cursor: pointer;
-}
-.menu-btn svg {
-  color: white;
-}
-.menu {
-  display: none;
-  position: fixed;
-}
-
-/* Estilos del sitio */
-.header {
-  display: block;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 999;
-  width: 100%;
-  height: var(--header-height);
-  padding: 1rem;
-  background-color: transparent;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.hero-img {
-  background-image: var(--hero-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: var(--hero-attachment);
-  background-color: #000;
-}
-.hero-content {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.logo {
-  color: white;
-}
-
-.title {
-  color: white;
-  font-family: "Ms Madi";
-  font-size: 120px;
-}
 
 /* Utilidades */
 
