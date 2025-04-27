@@ -1,5 +1,5 @@
 :root {
-  --header-height: 3 rem;
+  --header-height: 4rem;
 }
 
 /* Componentes */
@@ -15,7 +15,7 @@
 .menu {
   position: fixed;
   left: 0;
-  bottom: 3rem;
+  bottom: var(--header-height);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -87,4 +87,9 @@
   color: white;
   font-family: "Ms Madi";
   font-size: 60px;
+}
+
+/* utilidades */
+.bg-menu {
+  background-color: rgba(0, 0, 0, 0.2);
 }
