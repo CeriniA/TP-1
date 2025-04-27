@@ -1,0 +1,30 @@
+.acerca-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+
+}
+
+.acerca-title{
+  color: gray;
+  font-family: "Ms Madi";
+  font-size: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* utilidades */
+.col-text{
+    color: rgb(253, 76, 76);
+}
+
+/* media query */
+@media (min-width: 625px) {
+  .col-text{
+    color:orange
+  }
+}

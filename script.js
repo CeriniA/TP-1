@@ -17,4 +17,13 @@ let d = document;
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
   });
+ 
 })(document);
+d.addEventListener("scroll", (e) => {
+  if(window.scrollY > 100){
+    console.log("bg-menu")
+    d.querySelector(".header").classList.add("bg-menu");
+  }else{
+    d.querySelector(".header").classList.remove("bg-menu");
+  }
+})

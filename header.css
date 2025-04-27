@@ -15,7 +15,7 @@
 .menu {
   position: fixed;
   left: 0;
-  bottom: var(--header-height);
+  top: var(--header-height);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -47,7 +47,7 @@
   display: flex;
   position: fixed;
   left: 0;
-  bottom: 0;
+
   z-index: 999;
   width: 100%;
   height: var(--header-height);

@@ -1,5 +1,6 @@
 @import url("header.css");
 @import url("inicio.css");
+@import url("acerca.css");
 * {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -8,7 +9,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #000;
+  background-color: #fff;
 }
 
 /* Utilidades */
