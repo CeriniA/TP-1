@@ -1,4 +1,5 @@
 @import url("header.css");
+@import url("inicio.css");
 * {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -6,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   background-color: #000;
 }
 

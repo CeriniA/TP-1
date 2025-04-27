@@ -1,0 +1,58 @@
+.hero-img {
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: var(--hero-attachment);
+  background-color: #000;
+}
+.hero-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+    margin: 0;
+  color: white;
+  font-family: "Ms Madi";
+  font-size: 60px;
+  padding: 1rem;
+}
+
+/* media querys */
+@media (max-width: 625px) {
+  .hero-opacity {
+    background-color: rgba(100, 0, 40, 0.1);
+  }
+  .hero-content h2{
+    display: none;
+  }
+}
+@media (min-width: 625px) {
+  .hero-img {
+    background-image: url("assets/SaveInsta.to_445278211_771794015082620_640605994312597191_n.jpg");
+
+    background-color: #fff;
+  }
+  .title{
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 30px;
+    color: white;
+    font-family: "Ms Madi";
+  }
+  .hero-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}

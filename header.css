@@ -23,12 +23,13 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+
   pointer-events: none;
 }
 .menu.is-active {
   opacity: 1;
   pointer-events: auto;
+  transition: opacity 0.3s;
 }
 .menu a {
   text-decoration: none;
@@ -62,34 +63,50 @@
   max-width: 1200px;
 }
 
-.hero-img {
-  background-image: var(--hero-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: var(--hero-attachment);
-  background-color: #000;
-}
-.hero-content {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .logo {
   color: white;
-}
-
-.title {
-  color: white;
-  font-family: "Ms Madi";
-  font-size: 60px;
 }
 
 /* utilidades */
 .bg-menu {
   background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+/* media querys */
+@media (min-width: 625px) {
+  .menu-btn {
+    display: none;
+  }
+  .header {
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu {
+    opacity: 1;
+    flex-wrap: nowrap;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    position: static;
+  }
+  .menu a{
+    padding: 0 1rem;
+    color: rgb(94, 94, 94)  ;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .menu a:hover {
+
+    background-color: transparent;
+    color: #000;
+  }
+  
+  .logo{
+    color: rgb(94, 94, 94)  ;
+    font-weight: 600;
+  }
 }
