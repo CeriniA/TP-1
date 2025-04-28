@@ -3,6 +3,10 @@
 }
 
 /* Componentes */
+.logo {
+  color: white;
+}
+
 .menu-btn {
   background-color: transparent;
   outline: thin;
@@ -21,14 +25,13 @@
   width: 100%;
   justify-content: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(253, 76, 76, 0.2);
   opacity: 0;
-
   pointer-events: none;
 }
 .menu.is-active {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
   transition: opacity 0.3s;
 }
 .menu a {
@@ -47,8 +50,6 @@
   display: flex;
   position: fixed;
   left: 0;
-
-  z-index: 999;
   width: 100%;
   height: var(--header-height);
   padding: 1rem;
@@ -63,14 +64,13 @@
   max-width: 1200px;
 }
 
-.logo {
-  color: white;
-}
-
 /* utilidades */
-.bg-menu {
-  background-color: rgba(0, 0, 0, 0.2);
+.bg-menu-opacity {
+  background-color: rgb(253, 76, 76, 0.2);
   transition: background-color 0.3s;
+}
+.bg-menu-scroll {
+  background-color: rgb(253, 76, 76);
 }
 
 /* media querys */
@@ -92,21 +92,22 @@
     text-align: center;
     background-color: transparent;
     position: static;
+    pointer-events: all;
   }
-  .menu a{
+  .menu a {
     padding: 0 1rem;
-    color: rgb(94, 94, 94)  ;
+    color: rgb(94, 94, 94);
     font-weight: 600;
     cursor: pointer;
+    width: auto;
   }
   .menu a:hover {
-
     background-color: transparent;
     color: #000;
   }
-  
-  .logo{
-    color: rgb(94, 94, 94)  ;
+
+  .logo {
+    color: rgb(94, 94, 94);
     font-weight: 600;
   }
 }

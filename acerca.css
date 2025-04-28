@@ -1,30 +1,28 @@
-.acerca-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.acerca-container {
+  display: block;
+  text-align: center;
   align-items: center;
-width: 100%;
+  width: 100%;
   min-height: 100vh;
   background-color: #fff;
-
 }
 
-.acerca-title{
+.acerca-title {
   color: gray;
   font-family: "Ms Madi";
   font-size: 60px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* utilidades */
-.col-text{
-    color: rgb(253, 76, 76);
+.col-text {
+  color: rgb(253, 76, 76);
 }
 
 /* media query */
 @media (min-width: 625px) {
-  .col-text{
-    color:orange
+  .col-text {
+    color: orange;
   }
 }
