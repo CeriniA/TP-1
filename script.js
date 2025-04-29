@@ -12,7 +12,7 @@ let d = document;
   });
   d.addEventListener("click", (e) => {
     if(!e.target.matches(".menu a"))return false;
-    $menu.classList.add("none");
+    $menu.classList.remove("is-active");
     $header.classList.remove("bg-menu-opacity");
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
@@ -21,9 +21,11 @@ let d = document;
 })(document);
 d.addEventListener("scroll", (e) => {
   if(window.scrollY > 250){
-
     d.querySelector(".header").classList.add("bg-menu-scroll");
+    d.querySelector(".menu").classList.add("bg-menu-scroll");
+    
   }else{
     d.querySelector(".header").classList.remove("bg-menu-scroll");
+    d.querySelector(".menu").classList.remove("bg-menu-scroll");
   }
 })

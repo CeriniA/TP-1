@@ -15,6 +15,12 @@
   padding-right: 0.5rem;
 }
 
+.img-about{
+  width: 250px;
+  height: auto;
+  
+}
+
 /* utilidades */
 .col-text {
   color: rgb(253, 76, 76);
