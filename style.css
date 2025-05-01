@@ -25,3 +25,19 @@ body {
 .none {
   display: none;
 }
+
+/* svg-instagram  en header*/
+.svg-instagram {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right: 5px;
+}
+@media (min-width: 625px) {
+  .svg-instagram {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+    margin-right: 5px;
+  }
+}
