@@ -45,6 +45,7 @@
     font-size: 30px;
     color: white;
     font-family: "Ms Madi";
+    line-height: 1.5;
   }
   .hero-content{
     flex-direction: column;

@@ -2,14 +2,16 @@
 @import url("inicio.css");
 @import url("acerca.css");
 @import url("servicios.css");
-/* @import url("contacto.css"); */
+@import url("contacto.css");
 @import url("modal.css");
 :root {
   --header-height: 4rem;
+  
 }
-* {
+*{
   box-sizing: border-box;
   overflow-x: hidden;
+  
 }
 
 body {

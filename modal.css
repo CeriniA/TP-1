@@ -1,50 +1,57 @@
 .modaal {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--black-alpha-color);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
-  }
-  
-  .modaal-content {
-    position: relative;
-  }
-  
-  .modaal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  .modaal-close svg {
-    width: 3rem;
-    height: 3rem;
-    fill: var(--first-color);
-  }
-  
-  .modaal[id|="trabajo"]:target {
-    opacity: 1;
-    pointer-events: auto;
-  }
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 3, 3, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
 
-  /* .portfolio-modal {
-    padding: 1rem;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white-color);
-  } */
-  
- .galeria-modal{
-    width: 100%;
-    
- }
-  
+.modaal-content {
+  position: relative;
+}
+/* .modaal-content a {
+  text-decoration: none;
+} */
+
+.modaal-close {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modaal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: orange;
+}
+
+.modaal[id|="trabajo"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.galeria-modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  padding: 10px;
+  background-color: white;
+}
+.galeria-modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
