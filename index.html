@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
     <title>Anda Lucy</title>
   </head>
   <body>
@@ -42,7 +44,7 @@
           <a href="#inicio">Inicio</a>
           <a href="#acerca">Acerca</a>
           <a href="#servicios">Servicios</a>
-          <a href="#portafolio">Portafolio</a>
+
           <a href="#Contacto">Contacto</a>
         </nav>
       </section>
@@ -65,23 +67,118 @@
     </section>
     <section id="acerca" class="acerca">
       <div class="acerca-container">
-        <div>
+        <div class="acerca-title-container">
           <span class="acerca-title">Lucia</span>
           <span class="acerca-title col-text">San Martin</span>
         </div>
-        <img class="img-about" src="assets/AboutMe.jpeg" alt="">
+        <div class="galery-containter">
+          <section class="about-galery">
+            <img class="img-about" src="assets/AboutMe.jpeg" alt="" />
+            <img src="assets/Pasteleria/ser2 (2).webp" alt="" />
+            <img src="assets/Eventos/ser1 (4).webp" alt="" />
+          </section>
+        </div>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quisquam, voluptatibus, quisquam, voluptatibus,
-          quisquam, voluptatibus, quisquam, voluptatibus, quisquam,
-          voluptatibus, quisquam, voluptatibus, quisquam, voluptatibus,
-          quisquam, voluptatibus, quisquam, voluptatibus.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut unde
+          itaque accusamus sit? Molestias animi vitae nisi. Labore iure
+          accusamus maiores eos repellat, quo consectetur qui tenetur vel
+          accusantium optio! Quisquam, cumque, voluptatibus, eveniet doloribus
+          nobis doloremque ad facilis. Quod, cumque! Repudiandae, voluptatibus.
+          Quisquam, cumque, voluptatibus, eveniet doloribus nobis doloremque ad
+          facilis. Quod, cumque! Repudiandae, voluptatibus. Quisquam, cumque,
+          voluptatibus, eveniet doloribus nobis doloremque ad facilis. Quod,
+          cumque! Repudiandae, voluptatibus.
         </p>
       </div>
-      <article>
-        <img src="assets/" alt="" />
-      </article>
+    </section>
+
+    <section id="servicios" class="servicios">
+      <h1 class="servicios-title">Servicios</h1>
+      <div class="servicios-container">
+        <a href="#trabajo-1" class="portfolio-card">
+          <span class="card-container">
+            <small class="card-title">Pasteleria</small>
+            <div
+              class="img-card"
+              style="--card-image: url('assets/Pasteleria/ser2 (4).webp')"
+            ></div>
+            <!-- <img src="assets/Pasteleria/ser2 (1).webp" alt="" /> -->
+          </span>
+        </a>
+        
+        <span class="card-container">
+          <small class="card-title">Eventos</small>
+          <div
+            class="img-card"
+            style="--card-image: url('assets/Eventos/ser1 (13).webp')"
+          ></div>
+          <!-- <img src="assets/Eventos/ser1 (1).webp" alt="" /> -->
+        </span>
+        <span class="card-container">
+          <small class="card-title">Clases</small>
+          <div
+            class="img-card"
+            style="--card-image: url('assets/Clases/ser3 (1).webp')"
+          ></div>
+          <!-- <img src="assets/Clases/ser3 (1).webp" alt="" /> -->
+        </span>
+      </div>
+    </section>
+
+    <article class="modaal" id="trabajo-1">
+      <div class="modaal-content">
+        <a href="#cerrar" class="modaal-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+          </svg>
+        </a>
+        <article class="galeria-modal">
+          <img src="assets/Pasteleria/ser2 (1).webp" "> </img>
+          <img src="assets/Pasteleria/ser2 (2).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (3).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (4).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (5).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (6).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (7).webp" "></img>
+          <img src="assets/Pasteleria/ser2 (8).webp" "></img>
+        </article>
+
+      </div>
+    </article>
+
+    <section id="contacto" class="contacto">
+
+
+    </section>
+    <section  class="footer">
+           
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#acerca" class="nav-link px-2 text-body-secondary"
+                  >Acerca</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#servicios" class="nav-link px-2 text-body-secondary"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#contacto" class="nav-link px-2 text-body-secondary">Contacto</a>
+              </li>
+              
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+          </footer>
+    
+     
     </section>
   </body>
 </html>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script src="script.js"></script>

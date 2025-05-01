@@ -1,10 +1,37 @@
+.about-galery {
+  display: flex;
+  width: 350px;
+  height: 325px;
+}
+.about-galery img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.about-galery img:hover {
+  cursor: crosshair;
+  opacity: 1;
+  width: 300px;
+}
+.galery-containter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .acerca-container {
   display: block;
-  text-align: center;
   align-items: center;
+
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
+  padding-top: var(--header-height);
+  padding-left: 1rem;
+  padding-right: 1rem;
+ 
 }
 
 .acerca-title {
@@ -14,12 +41,25 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
-.img-about{
+.acerca-title-container {
+  text-align: center;
+}
+.description {
+  padding-top: 1rem;
+  display: block;
+  text-align: left;
+  max-width: 800px;
+  align-items: center;
+  margin: auto;
+}
+/* .img-about {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 250px;
   height: auto;
-  
-}
+} */
 
 /* utilidades */
 .col-text {
