@@ -53,7 +53,7 @@
   padding: 1rem;
   background-color: transparent;
   justify-content: center;
-  z-index: 999;
+  z-index: 888;
 }
 .header-container {
   display: flex;
