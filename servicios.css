@@ -16,6 +16,10 @@
   background-color: rgb(253, 76, 76);
   margin-top: 1rem;
 }
+.card-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 .servicios {
   display: block;
