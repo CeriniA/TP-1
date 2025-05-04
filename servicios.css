@@ -16,10 +16,7 @@
   background-color: rgb(253, 76, 76);
   margin-top: 1rem;
 }
-.card-container:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
+
 
 .servicios {
   display: block;
@@ -32,6 +29,10 @@
 .servicios a {
   text-decoration: none;
   color: rgb(94, 94, 94);
+}
+.servicios-container a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 .servicios-title {
   font-family: "Ms Madi";
@@ -65,12 +66,13 @@
     font-family: sans-serif;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    padding: 10px;
     justify-content: center;
     background-color: #fff;
     overflow: hidden;
     max-width: 1200px;
     color: rgb(94, 94, 94);
-    background-color: ora;
+    
   }
   .card-container{
     background-color: orange;
