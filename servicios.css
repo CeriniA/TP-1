@@ -17,7 +17,6 @@
   margin-top: 1rem;
 }
 
-
 .servicios {
   display: block;
   width: 100%;
@@ -43,10 +42,13 @@
   margin: 0;
 }
 .servicios-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
- 
 }
 
 .img-card {
@@ -62,19 +64,13 @@
 
 @media (min-width: 625px) {
   .servicios-container {
-    display: grid;
-    font-family: sans-serif;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
     justify-content: center;
     background-color: #fff;
-    overflow: hidden;
     max-width: 1200px;
     color: rgb(94, 94, 94);
-    
   }
-  .card-container{
+  .card-container {
     background-color: orange;
   }
 }
