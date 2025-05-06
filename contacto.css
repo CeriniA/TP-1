@@ -1,7 +1,6 @@
-.contacto{
-    padding-top: var(--header-height);
+.contacto {
+  padding-top: var(--header-height);
 }
-
 
 /* ********** Contact Form ********** */
 
@@ -26,7 +25,6 @@
 
 .contact-form input {
   border: 0;
-  padding-left: 0;
   border-bottom: thin solid #222;
 }
 
@@ -36,26 +34,25 @@
 }
 
 .contact-form input[type="submit"]:hover {
-  opacity: 0.75;    
+  opacity: 0.75;
 }
 
-.btn{
-    border-radius: 0.5rem;
-    padding: 1rem;
-    display: inline-block;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: white !important; 
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: white !important;
 }
 
 /* media querys */
 
 @media (min-width: 625px) {
-  .contact-form  {
+  .contact-form {
     background-color: orange;
   }
-  
 }
